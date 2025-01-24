@@ -7,12 +7,18 @@
 </head>
 <body>
     <div class="grid-container">
-        <div class="grid-item block-1">1</div>
-        <div class="grid-item block-2">2</div>
+        <div class="grid-item block-1">
+            <div>1</div>
+            <div>2</div>
+        </div>
+        <div class="grid-item block-2">
+            <div>3</div>
+            <div>4</div>
+        </div>
         <div class="grid-item block-3">3</div>
         <div class="grid-item block-4">4</div>
-        <div class="grid-item block-5">5</div>
     </div>
+    
 </body>
 <style>
     *{
@@ -22,12 +28,44 @@
         background-color: #333;
     }
     .grid-container {
-        border: 5px solid red;
+        border: 5px solid;
         display: grid;
-        width: 500px;
+        width: 800px;
         margin: 10px auto;
         gap: 10px;
         grid-template: repeat(2, 200px) / repeat(2, 1fr);
         }
+        
+    .grid-item {
+        color: snow;
+        background-color: #777;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+        padding: 10px;
+    }
+    .block-1{
+        order: 1;
+        color: #777;
+    } 
+    
+    .block-2{
+        order: 2;
+        color: #777;
+    }
+    .block-3{
+        order: 3;
+        color: #777;
+    }
+    .block-4{
+        order: 4;
+        color: #777;
+    }
+    .block-5{
+        order: 5;
+        color: #777;
+        grid-column: span 2 ;
+    }
 </style>
 </html>
