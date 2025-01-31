@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid 1 copy </title>
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <div class="grid-item block-1">1</div>
+        <div class="grid-item block-2">2</div>
+        <div class="grid-item block-3">3</div>
+        <div class="grid-item block-4">4</div>
+        <div class="grid-item block-5">5</div>
+        <div class="grid-item block-6">6</div>
+        <div class="grid-item block-7">7</div>
+        <div class="grid-item block-8">8</div>
+        <div class="grid-item block-9">9</div>
+        <div class="grid-item block-10">10</div>
+        <div class="grid-item block-11">11</div>
+        <div class="grid-item block-12">12</div>
+        <div class="grid-item block-13">13</div>
+        <div class="grid-item block-14">14</div>
+        <div class="grid-item block-15">15</div>
+    </div>
+    
+</body>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+  body{
+    background-color: grey;
+  }
+   
+    .grid-container {
+        border: 5px solid red;
+        display: grid;
+        grid-template-columns: 20%  20% 20%  20% 20%; 
+        
+      
+    }
+    .grid-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3px;
+        font-size: 25px;
+        padding: 30px;
+       
+    }
+
+    .block-1{
+        order: 1;
+    } 
+    
+    .block-2{
+        order: 2;
+    }
+    .block-3{
+        order: 3;
+    }
+    .block-4{
+        order: 4;
+    }
+    .block-5{
+        order: 5;
+    }
+    .block-6{
+        order: 6;
+    }
+    .block-7{
+        order: 7;
+    }
+    .block-8{
+        order: 8;
+    }
+    .block-9{
+        order: 9;
+    }
+    .block-10{
+        order: 10;
+    }
+    .block-11{
+        order: 11;
+    }
+    .block-12{
+        order: 12;
+    }
+    .block-13{
+        order:13;
+    }
+    .block-14{
+        order: 14;
+    }    
+    .block-15{
+        order: 15;
+    }    
+
+    .block-2, .block-4,
+    .block-6,  .block-8,
+    .block-10, .block-12, .block-14{
+        background-color: snow;
+        color: snow;
+    }
+
+    .block-1,.block-3, 
+    .block-5, .block-7,
+    .block-9, .block-11,
+    .block-13, .block-15{
+        background-color: black;
+    }
+
+
+</style>
+</html>

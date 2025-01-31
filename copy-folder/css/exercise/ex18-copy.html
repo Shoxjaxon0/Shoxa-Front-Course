@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, <span>adipisicing elit</span>. Vitae illo optio asperiores,
+            amet iure est
+            expedita quisquam molestiae, <span>officiis ducimus</span> dolorem iste mollitia 
+            tempora voluptatem, cupiditate cumque
+            quidem earum repellendus?
+        </p>
+        <div class="d1">
+            <img src="/img/3.jpg" alt="" width="100px" height="100px">            
+            <img src="/img/3.jpg" alt="" width="100px" height="100px">
+            <img src="/img/3.jpg" alt="" width="100px" height="100px"><br>
+            <img src="/img/3.jpg" alt="" width="100px" height="100px">
+            <img src="/img/3.jpg" alt="" width="100px" height="100px">
+            <img src="/img/3.jpg" alt="" width="100px" height="100px"><br>
+            <img src="/img/3.jpg" alt="" width="100px" height="100px">
+            <img src="/img/3.jpg" alt="" width="100px" height="100px">
+            <img src="/img/3.jpg" alt="" width="100px" height="100px"><br>
+        </div>
+    </main>
+
+</body>
+<style>
+    *{
+        transition: 1s;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: black;
+        color: snow;
+    }
+
+    main{
+        min-width: 450px;
+        padding: 20px;
+        margin: 20px auto;
+        border-radius: 20px;
+        width: 80%;
+        text-align: center;
+        background-color: #333
+    }
+    p{
+        padding: 0 20px;
+    }
+     
+    main div{
+        padding: 20px 0 0 0 ;
+    }
+    main div img:nth-child(5),
+    main div img:nth-child(6),
+    main div img:nth-child(7),
+    main div img:nth-child(10){
+        visibility: hidden;
+    }
+
+    main:hover{
+        font-size: 20px;
+        padding: 70px 20px;
+        background: url(/img/3.jpg) center / cover no-repeat; 
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.543);
+    }
+
+    img:hover{
+        border: 10px double green;
+        opacity: 0.5;
+    }
+
+    main:hover span{
+        display: inline-block;
+        border: 3px solid greenyellow;
+    }
+    span:hover{
+        background: url(/img/3.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.546);
+        border-radius: 20px;
+        padding: 20px;
+        display: inline-block;
+        color: magenta;
+        text-transform: lowercase;
+        font-weight: bold;
+    }
+</style>
+</html>

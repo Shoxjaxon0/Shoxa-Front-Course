@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid 3 copy</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item b1"></div>
+        <div class="grid-item b2">
+            <section class="grid-item 1">1</section>
+            <section class="grid-item 2">2</section>
+        </div>
+        <div class="grid-item b3">
+            <section class="grid-item 3">3</section>
+            <section class="grid-item 4">4</section>
+            <section class="grid-item 5">5</section>
+        </div>
+        <div class="grid-item b4">
+            <section class="grid-item 6">6</section>
+            <section class="grid-item 7">7</section>
+            <section class="grid-item 8">8</section>
+            <section class="grid-item 9">9</section>
+        </div>
+    </div>
+
+</body>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #333;
+    }
+
+    .grid-container {
+        border: 5px solid;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 200px);
+        width: 1000px;
+        margin: 10px auto;
+        gap: 10px;
+    }
+
+    .grid-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin: 20px; */
+        font-size: 25px;
+        border: 3px;
+    }
+
+    .b1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        grid-template-rows: 1fr;
+        background-color: gray;
+        order: 1;
+        color: snow;
+    }
+
+
+    .b2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+        order: 2;
+        color: snow;
+    }
+
+    .b3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        grid-template-rows: 1fr;
+        order: 3;
+        color: snow;
+    }
+
+    .b4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        grid-template-rows: 1fr;
+        order: 4;
+        color: snow;
+    }
+
+    section {
+        background-color: gray;
+        height: 200px;
+    }
+</style>
+
+</html>
