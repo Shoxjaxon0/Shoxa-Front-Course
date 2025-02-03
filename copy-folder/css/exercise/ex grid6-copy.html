@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,104 +9,109 @@
 
 <body>
     <div class="grid-container">
-        <div class="grid-item block-1">
-            <section class="grid-item 1">1</section>
-            <section class="grid-item 2">2</section>
-            <section class="grid-item 3">3</section>
+        <div class="block-1">
+            <div class="grid-item 1">1</div>
+            <div class="grid-item 2">2</div>
+            <div class="grid-item 3">3</div>
         </div>
-        <div class="grid-item block-2">
-            <section class="grid-item 4">4</section>
-            <section class="grid-item 5">5</section>
-            <section class="grid-item 6">6</section>
+        <div class="block-2">
+            <div class="grid-item 4">4</div>
+            <div class="grid-item 5">5</div>
+            <div class="grid-item 6">6</div>
         </div>
-        <div class="grid-item block-3">
-            <section class="grid-item 7">7</section>
-            <section class="grid-item 8">8</section>
-            <section class="grid-item 9">9</section>
+        <div class="block-3">
+            <div class="grid-item 7">7</div>
+            <div class="grid-item 8">8</div>
+            <div class="grid-item 9">9</div>
         </div>
-        <div class="grid-item block-4">
-            <section class="grid-item 10">10</section>
-            <section class="grid-item 11">11</section>
-            <section class="grid-item 12">12</section>
+        <div class="block-4">
+            <div class="grid-item 10">10</div>
+            <div class="grid-item 11">11</div>
+            <div class="grid-item 12">12</div>
         </div>
-        <div class="grid-item block-5">
-            <section class="grid-item 13">13</section>
-            <section class="grid-item 14">14</section>
-            <section class="grid-item 15">15</section>
-        </div> 
-    </div>    
+        <div class="block-5">
+            <div class="grid-item 13">13</div>
+            <div class="grid-item 14">14</div>
+            <div class="grid-item 15">15</div>
+        </div>
+    </div>
 </body>
 <style>
-    *{
+    * {
         box-sizing: border-box;
     }
-    body{
+
+    body {
         background-color: #333;
     }
+
     .grid-container {
         border: 5px solid;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 100px);
+        grid-template-rows: repeat(5, 1fr);
+        height: 500px;
         width: 500px;
         margin: 10px auto;
         gap: 10px;
     }
+
+
+
+    .block-1 {
+        order: 1;
+        display: grid;
+        grid-template: 1fr / repeat(3, 1fr);
+        gap: 10px;
+        color: snow;
+        background-color: #333;
+    }
+
+    .block-2 {
+        order: 2;
+        display: grid;
+        grid-template: 1fr / repeat(3, 1fr);
+        gap: 10px;
+        order: 2;
+        background-color: #333;
+        color: snow;
+    }
+
+    .block-3 {
+        display: grid;
+        grid-template: 1fr / repeat(3, 1fr);
+        gap: 10px;
+        order: 3;
+        color: snow;
+        background-color: #333;
+    }
+
+    .block-4 {
+        display: grid;
+        grid-template: 1fr / repeat(3, 1fr);
+        gap: 10px;
+        order: 4;
+        background-color: #333;
+        color: snow;
+    }
+
+    .block-5 {
+        order: 5;
+        display: grid;
+        grid-template: 1fr / repeat(3, 1fr);
+        gap: 10px;
+        background-color: #333;
+        color: snow;
+    }
+
     .grid-item {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* margin: 20px; */
+        background-color: gray;
         font-size: 25px;
         border: 3px;
     }
-    .block-1{
-        order: 1;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        grid-template-rows: 1fr;
-        color: snow;
-        background-color: gray;
-    } 
-    
-    .block-2{
-        order: 2;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        grid-template-rows: 1fr;
-        order: 2;
-        background-color: gray;
-        color:snow;
-    }
-    .block-3{
-        order: 3;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        grid-template-rows: 1fr;
-        order: 3;
-        color: snow;
-        background-color: gray;
-    }
-    .block-4{
-        order: 4; display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        grid-template-rows: 1fr;
-        order: 4;
-        background-color: gray;
-        color: snow;
-    }
-    .block-5{
-        order: 5; display: grid;
-        grid-template-columns: 70% 30%;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        grid-template-rows: 1fr;
-        background-color: gray;
-        color: snow;
-    }
 </style>
+
 </html>
