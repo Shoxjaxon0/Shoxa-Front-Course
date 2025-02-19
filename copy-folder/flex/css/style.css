@@ -1,43 +1,147 @@
-*::before,
-*::after{
+* {
+    transition: 1;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+
+body {
     display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+    justify-items: center;
+    align-items: center;
     min-height: 100vh;
-    padding: 15px;
-}
-.container>div{
-    flex: 100%;
-}
-.header,
-.footer,
-.main,
-.main2{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-.header>div, .main, .main2>div, .footer>div{
-    border-radius: 5px;
 }
 
-.header>div{
-    min-height: 110px;
-    background: red;
+.container {
+    height: 97.5vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    gap: 10px;
+    font-weight: 17px;
+    font-family: sans-serif;
+    color: #fff;
 }
-.div-1{
-    flex: 6;
-    background: yellowgreen;
-}
-.div-2{
-    flex: 7;
-}
-.main2>div{
+
+.container>div {
     flex: 100%;
-    background: mediumorchid;
+}
+
+.subContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    background: #000;
+    border-radius: 3px;
+}
+
+.container:hover .navbar {
+    background: url(/img/1.jpg) center / cover no-repeat;
+}
+
+.sidebar {
+    flex: 1;
+    background: rgb(75, 186, 75);
+}
+
+.container:hover .sidebar {
+    background: url(/img/3.jpg) center / cover no-repeat;
+}
+
+.main_container {
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.main_container>div {
+    flex: 100%;
+}
+
+.h4 {
+    padding: 10px;
+}
+
+.main {
+    min-height: 250px;
+    background: rgb(179, 179, 183);
+}
+
+.container:hover .main {
+    background: url(/img/4.jpg) center / cover no-repeat;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.content1,
+.content2,
+.content3 {
+    min-height: 200px;
+    background: rgb(100, 104, 104);
+    flex: 1;
+}
+
+.container:hover .content1 {
+    background: url(/img/2.jpg) center / cover no-repeat;
+}
+
+.container:hover .content2 {
+    background: url(/img/5.jpg) center / cover no-repeat;
+}
+
+.container:hover .content3 {
+    background: url(/img/Bill-Gates.jpg) center / cover no-repeat;
+}
+
+.footer {
+    flex: 100%;
+    min-height: 50px;
+    background: #000;
+}
+
+.container:hover .footer {
+    background: url(/img/forest.jpg) center / cover no-repeat;
+}
+
+.sidebar,
+.main,
+.content>div {
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+@media only screen and (max-width: 768px ) {
+    .subContainer {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        min-height: 50px;
+    }
+}
+
+@media only screen and (max-width: 550px ) {
+    .content>div {
+        flex: 100%;
+    }
+
+    .content1,
+    .content2,
+    .content3 {
+        min-height: 170px !important;
+    }
 }
