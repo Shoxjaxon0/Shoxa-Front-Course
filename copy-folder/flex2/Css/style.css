@@ -171,24 +171,27 @@ section{
 }
 .content-col p{
     padding: 0;
-    margin: 30px auto ;
+    margin: 30px auto;
 }
 .content-col .ctn{
     margin-left: -100px;
 }
-h4{
-    font-size: 3vmin;
-    color: #484872;
-    margin: 20px auto;
+
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #484872;
+    text-align: center;
 }
 
-p{
-    color: #7c7c7c;
-    padding: 0px 40px;
+.footer p{
+    color: whitesmoke;
+    margin: 20px auto;
+    padding: 20px;
 }
-.events .ctn{
-    margin-top: 30px;
-}
+
 /* Mobile device */
 @media only screen and (max-width:850px){
     .menu-btn{
