@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="main">
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+    </div>
+</body>
+<style>
+    *{transition: 1s;}
+    ::before, ::after
+    {padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 1s;}
+    
+    .main{
+        width: 200px;
+        background-color: lightgray;
+        margin: 0 auto;
+    }
+    li{
+        list-style-type: lao;
+        position: relative;
+        padding: 10px 20px;
+    }
+
+    li::selection{
+        background-color:aquamarine;
+        color: magenta;
+    }
+    li:hover{
+        list-style-type: none;
+    }
+    li::before{
+        content: "😡";
+        opacity: 0;
+        position: absolute;
+        left: 25px;
+    }
+    li:hover::before{
+        content: "🤪";
+        left: -25px;
+        opacity: 1;
+    }
+</style>
+</html>
