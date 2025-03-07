@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "Shoxa-Front-Course",
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Coffee-Cafe-main"
+	}
+}
