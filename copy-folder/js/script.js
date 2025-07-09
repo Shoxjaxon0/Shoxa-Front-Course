@@ -25,13 +25,13 @@
 
 // ''
 // ""
-let age = 25
-let str1 = 'Мне ${age} лет';
-console.log(age);
+// let age = 25
+// let str1 = `Мне ${age} лет`;
+// console.log(str1);
 
 // let str1 = 'Это называется "строка"';
 // console.log( str1);
-// let str1 = "Мне ${age} лет";
+// let str1 = `Мне ${age} лет`;
 // console.log(typeof str1);
 // let a = true;
 // console.log(typeof a);
@@ -43,5 +43,26 @@ console.log(age);
 
 // console.log(typeof a)
 
-let a = undefined;
-console.log(a)
+// let a = undefined;
+// console.log(a)
+
+// var x = 10
+// let y = 20
+// const z = 30
+
+// var x = 100
+// y = 50
+
+// z = 200 // error
+// console.log(z);
+
+
+const obj = {
+    name: "Shoxa",
+    age: 17,
+}
+
+obj.age = 18
+
+console.log(obj);
+
