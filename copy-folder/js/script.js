@@ -46,23 +46,135 @@
 // let a = undefined;
 // console.log(a)
 
-// var x = 10
-// let y = 20
-// const z = 30
+// let sym = Symbol("foo");
+// let sym2 = Symbol("foo");
+// let sym = "foo";
+// let sym2 = "foo";
 
-// var x = 100
-// y = 50
+// console.log(sym === sym2);
 
-// z = 200 // error
-// console.log(z);
+// const person = { name: 'Алексей', age: 33};
+// const person = { "Алексей", 33};
+
+// console.log(typeof person);
 
 
-const obj = {
-    name: "Shoxa",
-    age: 17,
-}
+// function sum(a) {
+//     return a + 1; 
+// }
 
-obj.age = 18
+// // console.log(sum(10))
+// console.log( typeof sum)
 
-console.log(obj);
+// const eror = new Error("Ошибочка вышла-с");
+// // console.log(error. message)
+// console.log(typeof error)
 
+// let a = 5;
+// a = true;
+// console.log(a, typeof a) 
+
+// let a;
+// a = 5 ;
+
+// let a = ( b = 5);
+// let a = 5; 
+// let b = true;  
+// let c = 'hello'; 
+// let d = null ;      
+
+// let e = a;
+
+// let a = 1;
+
+// function example() {
+//     // console(a);
+//     console.log(a);
+// }
+
+// example();
+
+// if (a) { 
+//     let b = 2;
+//     let c = 3;
+    // console.log(b);
+    // console.log(c);
+// }
+
+// console.log(b);
+// console.log(c);
+// let a = 1;
+
+//  function example() { 
+//     if (a) {
+//         var localVar = 20;
+        // let localVar = 20;
+        // var localVar = 20;
+    // } 
+    //  console.log(localVar);
+    // var localVar = 20;
+    // console.log(localVar)
+//  }
+
+//  example()
+//    console.log(localVar);
+ 
+// "use strict"
+
+// let x = 1;
+
+// function example() {
+//     if(x) {
+//     let y = 10;  
+    // let y = 10;   
+    // console.log(y);
+    // }
+//  console.log(y);
+// }
+
+// example();
+
+// let y = 20;
+
+// console.log(y);
+ 
+// const a = 1;
+// a = 2;
+
+// var a = 1;
+// var a = 2;
+// let a = 1;
+// let a = 2;
+
+// let x = 1;
+
+// function example() {
+//     if (x) {
+        // var y = 10;
+//     }
+//     console.log(y)
+// }
+
+// example();
+
+// console.log(y);
+
+// // var y = 10;
+
+// let y = 10;
+
+// console.log(y);
+
+// var globalVar = 30;
+
+// console.log(window.globalVar);
+
+let userName = "Sasha";
+
+let test = 123;
+
+// let $a
+let myName
+// let myname
+// let Переменная = 2
+let return 
