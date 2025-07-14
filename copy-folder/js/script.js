@@ -221,4 +221,36 @@
 // console.log(6 * "2");
 // console.log("4px" - 2)
 // console.log(parseInt("4px") - 2);
-console.log(2 + 3 *4);
+// console.log((2 + 3) *4); 
+
+// Инкремент ++
+// Декремент --
+// let x = 1;
+// ++x;
+// let counter = 1;
+// ++counter;
+// console.log(2 * counter);
+// console.log(2 * ++counter);
+
+// let x = 2;
+// x +=5;
+// x -=5;
+// x /=5;
+// x *= 3 + 5;
+// console.log(x);
+
+// if (x > 5);{
+//     console.log("x больше 5");
+// }
+// let result = 2 + 3 ;
+
+// alert("Будут использованы Ваши персоналные данные")
+let message = confirm(
+    "Подвердите согласие на использование персональных данных"
+);
+
+if(message) {
+    alert("Пройдите по ссылке https://www.google.com/?hl=ru");
+} else {
+    alert("Не очень-то и надо");
+}
