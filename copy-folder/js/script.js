@@ -169,12 +169,56 @@
 
 // console.log(window.globalVar);
 
-let userName = "Sasha";
+// let userName = "Sasha";
 
-let test = 123;
+// let test = 123;
 
-// let $a
-let myName
-// let myname
-// let Переменная = 2
-let return 
+// // let $a
+// let myName
+// // let myname
+// // let Переменная = 2
+// let return 
+
+// // +
+// let num = 1 + 3 ;
+// console.log(num);
+
+// +, -, *, -, **, %
+// let num = 2 + 3;
+// let num = 2 * 3;
+// let num = 2 / 3;
+// let num = 2 ** 3;
+// let num = 7 % 3;
+// let num = 7 % 2;
+// let num = 8 % 2;
+// let num = 6;
+// num  = -num;
+// num  = +num;
+// console.log(num);
+
+ // +2, -2, +0, -0
+
+//  let a = + "2"
+// let a = + "2aa"
+//  console.log(+true)
+//  console.log(+"")
+//  console.log(typeof +"")
+// let num = parseInt("e42.1sdfbsd");
+// console.log(num, typeof num)
+
+// let a = 3 + 5 + "2";
+// console.log(typeof a, a);
+
+// let a = "2";
+// let b = "3";
+
+// let c = +a + +b
+// let c = Number(a) + Number(b)
+// console.log(c)
+
+// console.log(6 + "2");
+// console.log(6 / "2");
+// console.log(6 * "2");
+// console.log("4px" - 2)
+// console.log(parseInt("4px") - 2);
+console.log(2 + 3 *4);
