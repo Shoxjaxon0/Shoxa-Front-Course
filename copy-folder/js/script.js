@@ -245,12 +245,19 @@
 // let result = 2 + 3 ;
 
 // alert("Будут использованы Ваши персоналные данные")
-let message = confirm(
-    "Подвердите согласие на использование персональных данных"
-);
+// let message = confirm(
+//     "Подвердите согласие на использование персональных данных"
+// );
 
-if(message) {
-    alert("Пройдите по ссылке https://www.google.com/?hl=ru");
-} else {
-    alert("Не очень-то и надо");
+// if(message) {
+    // alert("Пройдите по ссылке https://www.google.com/?hl=ru");
+//     window.location.href = "https://www.google.com/?hl=ru";
+// } else {
+//     alert("Не очень-то и надо");
+// }
+
+let age = prompt("Сколько Вам лет", 22)
+
+if (age = null ){
+    alert("Mmm, да...")
 }
