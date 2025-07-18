@@ -256,8 +256,41 @@
 //     alert("Не очень-то и надо");
 // }
 
-let age = prompt("Сколько Вам лет", 22)
+// let age = +prompt("Сколько Вам лет", 22)
+// let age = prompt("Сколько Вам лет", 22)
 
-if (age = null ){
-    alert("Mmm, да...")
+// if (age === null ){
+//     alert("Mmm, да...")
+// }else{
+    // let year = +prompt("в каком году родились?")
+        // let year = +prompt("Какой сейчас год?")
+        // let year = prompt("Какой сейчас год?")
+    // alert(`Сейчас ${age + year} год`)
+//       alert(`Вы родились ${year - age} год`)
+// }
+
+// alert(`Сейчас ${age + year} год`)
+
+// const totalSeconds = 3665;
+
+// const hours = totalSeconds / 3600;
+// const hours = parseInt(totalSeconds / 3600);
+// const minutes = parseInt((totalSeconds % 3600) / 60);
+// const seconds = totalSeconds % 60;
+
+// console.log(`${totalSeconds} секундах ${hours} час ${minutes} мин ${seconds} секунд`);
+
+// let isAdmin = prompt("Если Вы админ, введите любой текст");
+// let isLogin = prompt("Введите логин");
+// let isPassword = prompt("Введите пароль");
+
+// let canAccesAdminPanel = isAdmin && isLogin && isPassword;
+
+// alert(canAccesAdminPanel && "Доступ разрешен")
+
+let hours = 10;
+if(hours =>9 && hours < 18) {
+    console.log(`открыто`);
+}else {
+    console.log("Закрыто");
 }
