@@ -288,9 +288,45 @@
 
 // alert(canAccesAdminPanel && "Доступ разрешен")
 
-let hours = 10;
-if(hours =>9 && hours < 18) {
-    console.log(`открыто`);
-}else {
-    console.log("Закрыто");
-}
+// let hours = 10;
+// let hours = 8;
+// if(hours =>9 && hours < 18) {
+//     console.log(`открыто`);
+// }else {
+//     console.log("Закрыто");
+// }
+
+// ||
+// console.log(1 === 1 || 2 === 4 || 3 === "3");
+// console.log(1 === 2 || 2 === 4 || 3 === "3");
+// let a = 3;  
+// let b = 5;
+// let b = null;
+// console.log(a && b);
+// console.log(a || b);
+
+// let temp = false;
+// console.log(temp || 'Температуара 20 градусов');
+
+
+// let age = prompt("Введите Ваш возраст");
+// let isStudent = prompt("Вы студент? (да/нет"). toLowerCase() === "да";
+// let hasDiscount = prompt("У вас есть скидка? (да/нет"). toLowerCase() === "да";
+
+// let canGetDiscount = age < 18 || isStudent || hasDiscount;
+
+// if(canGetDiscount) {
+//     alert("Вы можете получит товар со скидкой");
+// }else{
+//     alert("Желаете приобрести карту нашего магазина?");
+// }
+
+// let answer = prompt("Напишите зимний месяц").toLowerCase();
+
+// if (answer === 'декабрь' || answer === 'январь' || answer === 'февраль') {
+//     alert("Правилно");
+// }else{
+//     alert("Не правилно");
+// }
+
+ 
