@@ -329,4 +329,29 @@
 //     alert("Не правилно");
 // }
 
- 
+ // ||= -Логический присваивание ИЛИ
+ // a ||= b
+ // a || (a = b)
+
+//  let temp = "";
+//  temp ||= "Данных пока нет. Зайдите позже";
+//  console.log(temp);
+
+// let temp = "25";
+// if(!temp) {
+//     temp = "Данных пока нет. Зайдите позже";
+// }
+
+// console.log(temp);
+
+// &&=
+// a && = b;
+// a && (a = b)
+let age = 27;
+// console.log(age &&= 'Пользователю ' + age + ' лет' )
+// console.log((age &&= 'Пользователю ' + age + ' лет'))
+// console.log(age);
+if (age) {
+    console.log(age &&= 'Пользователю ' + age + ' лет' )
+    
+}
