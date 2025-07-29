@@ -359,16 +359,17 @@
 
 // !
 // result != value
-let temp = "";
+// let temp = "";
 
-const tempEl = document.getElementById("temperatura");
-const loaderEl = document.getElementById("loader");
+// const tempEl = document.getElementById("temperatura");
+// const loaderEl = document.getElementById("loader");
 
-tempEl.textContent =
- (temp && `Температура: ${temp}  градусов `)|| "Данные загружается";
+// tempEl.textContent =
+//  (temp && `Температура: ${temp}  градусов `)|| "Данные загружается";
 
-if(temp) {
-    loaderEl.style.display = "none";
-}else {
-    loaderEl.style.display = "block"
-}
+// if(temp) {
+//     loaderEl.style.display = "none";
+// }else {
+//     loaderEl.style.display = "block"
+// }
+    
