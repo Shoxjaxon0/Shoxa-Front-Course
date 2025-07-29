@@ -347,11 +347,28 @@
 // &&=
 // a && = b;
 // a && (a = b)
-let age = 27;
+// let age = 27;
 // console.log(age &&= 'Пользователю ' + age + ' лет' )
 // console.log((age &&= 'Пользователю ' + age + ' лет'))
 // console.log(age);
-if (age) {
-    console.log(age &&= 'Пользователю ' + age + ' лет' )
+// if (age) {
+//     console.log(age &&= 'Пользователю ' + age + ' лет' )
     
+// }
+
+
+// !
+// result != value
+let temp = "";
+
+const tempEl = document.getElementById("temperatura");
+const loaderEl = document.getElementById("loader");
+
+tempEl.textContent =
+ (temp && `Температура: ${temp}  градусов `)|| "Данные загружается";
+
+if(temp) {
+    loaderEl.style.display = "none";
+}else {
+    loaderEl.style.display = "block"
 }
