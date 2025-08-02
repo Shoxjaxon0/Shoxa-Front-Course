@@ -410,16 +410,60 @@
     //     alert("Неудовлетворительно! На пересдачу!")
     // }
 
-    let age = +prompt("Введите Ваш возраст");
+    // let age = +prompt("Введите Ваш возраст");
+    // let hasLicense;
 
-    if (age >= 18) {
-        let hasLicense = prompt("Если ли у Вас водительские права? (да / нет)").toLocaleLowerCase();
+    // if (age >= 18) {
+    //     hasLicense = prompt("Если ли у Вас водительские права? (да / нет)"
+    //     ).toLowerCase();
+    //     console.log("chek1" + hasLicense);
+    //     if(hasLicense === "да") {
+    //         alert("Вы можете водить машину");
+    //         console.log("chek2" + hasLicense);
+    //     }else {
+    //         alert("Вы не можете водить машину , так как у  вас нет прав");
+    //         console.log("chek3" + hasLicense)
+    //     }
+    // }else {
+    //     alert("Вы не можете водить машину , так как Вам меньше 18 лет");
+    // }
+    // console.log("chek4" + hasLicense);
+
+    // function question() {
+    //      let age = +prompt("Введите Ваш возраст");
+
+    //       if(isNaN(age)) {
+    //         alert("Вы ввели нечисло. Пожалуйста, введите число значение");
+    //         question();
+    //     }else {
+    //         message(age);
+    //     }
+    // }   
+
+    // let age = +prompt("Введите Ваш возраст");
+
+    // while (true) {
+    //     // let age = +prompt("Введите Ваш возраст");
+    //     // age = +prompt("Введите Ваш возраст");
+    //     if(isNaN(age)) {
+    //         alert("Вы ввели нечисло. Пожалуйста, введите число значение");
+    //     }else{
+    //         break;
+    //     }
+    // }
+    // question()
+
+    // function message(age) {
+    //     if (age >= 16) {
+    //         alert("Доступ разрешен")
+    //     }else{
+    //         alert("Доступ ограничен")
+    //     }
+    // }
+
+    // if (age >= 16) {
+    //     alert("Доступ разрешен")
+    // }else{
+    //     alert("Доступ ограничен")
+    // }
     
-        if(hasLicense === "да") {
-            alert("Вы можете водить машину")
-        }else {
-            alert("Вы не можете водить машину , так как у  вас нет прав")
-        }
-    }else {
-        alert("Вы не можете водить машину , так как Вам меньше 18 лет")
-    }
